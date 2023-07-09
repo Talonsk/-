@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-signal coints_changed
+signal coins_changed
 
 const SPEED = 300
 const JUMP_VELOCITY = -1000.0
@@ -31,3 +31,4 @@ func change_coins(diff : int):
 func pick_up_money(money : Money):
 	money.pick_up()
 	change_coins(1)
+	print(coins)

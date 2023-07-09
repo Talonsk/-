@@ -135,9 +135,8 @@ autoplay = true
 wait_time = 5.0
 
 [node name="Money" parent="." instance=ExtResource("8_bj467")]
-top_level = false
-position = Vector2(396, -1318)
+position = Vector2(394, -1318)
 collision_layer = 0
-collision_mask = 1
+collision_mask = 3
 
 [connection signal="timeout" from="Start_spawn" to="." method="_on_timer_timeout"]

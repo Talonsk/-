@@ -1,9 +1,6 @@
-res://Scenes/Platform.tscn
-res://Code/Platform.gd
-res://Scenes/Charecter.tscn
-res://Scenes/Main.tscn
-res://Scenes/Object/money.tscn
-res://Code/Main.gd
-res://Scenes/Object/Money.gd
-res://Code/AnimatedMoney.gd
 res://Code/Charecter.gd
+res://Scenes/Charecter.tscn
+res://Code/Platform.gd
+res://Scenes/Main.tscn
+res://Scenes/Platform.tscn
+res://Scenes/Object/money.tscn

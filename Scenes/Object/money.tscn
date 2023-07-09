@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://dagalf0l3r3cx"]
+[gd_scene load_steps=11 format=3 uid="uid://dagalf0l3r3cx"]
 
 [ext_resource type="Script" path="res://Scenes/Object/Money.gd" id="1_2kicw"]
 [ext_resource type="Texture2D" uid="uid://d0kafybi0dwrn" path="res://Image/MonedaD.png" id="2_xtrql"]
@@ -51,9 +51,6 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_7gdh0"]
 radius = 19.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_hgjsb"]
-radius = 31.257
-
 [node name="Money" type="CharacterBody2D"]
 top_level = true
 collision_layer = 8
@@ -66,17 +63,9 @@ scale = Vector2(2.375, 2.375)
 sprite_frames = SubResource("SpriteFrames_dam2e")
 animation = &"Rotates"
 autoplay = "Rotates"
-frame = 2
-frame_progress = 0.513168
 centered = false
 script = SubResource("GDScript_buiok")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(19, 19)
 shape = SubResource("CircleShape2D_7gdh0")
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(19, 20)
-shape = SubResource("CircleShape2D_hgjsb")
