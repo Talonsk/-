@@ -1,11 +1,21 @@
-extends Area2D
+extends CharacterBody2D
 
 class_name Money
+
+var SPEED = 80
 
 var is_picked_up := false
 
 func pick_up():
 	is_picked_up = true
-	
-func _on_Area2D_body_entered(body): # This is called when Area2D detects a collision
 	queue_free()
+
+func _physics_process(delta):
+	
+	if not is_on_floor():
+		velocity.y = SPEED
+		
+	if velocity.y >= 20000:
+		queue_free()
+		
+	move_and_slide()

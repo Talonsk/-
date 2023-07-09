@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://cf4o7j7wbq0px"]
+[gd_scene load_steps=5 format=3 uid="uid://cf4o7j7wbq0px"]
 
 [ext_resource type="Script" path="res://Code/Platform.gd" id="1_b7pea"]
 [ext_resource type="Texture2D" uid="uid://ck4cwm2vypxr6" path="res://Image/Platform.png" id="1_sak0h"]
@@ -7,15 +7,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_58m2x"]
 size = Vector2(64, 64)
 
-[sub_resource type="Curve2D" id="Curve2D_2aohm"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 24, 0)
-}
-point_count = 3
-
 [node name="Platform" type="CharacterBody2D"]
 collision_layer = 2
-collision_mask = 4
+collision_mask = 12
 script = ExtResource("1_b7pea")
 Money = ExtResource("2_h8oqr")
 
@@ -26,9 +20,3 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(32, 32)
 shape = SubResource("RectangleShape2D_58m2x")
-
-[node name="MoneyPath" type="Path2D" parent="."]
-curve = SubResource("Curve2D_2aohm")
-
-[node name="MoneyPathFollow" type="PathFollow2D" parent="MoneyPath"]
-position = Vector2(24, 0)

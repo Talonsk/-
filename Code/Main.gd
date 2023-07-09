@@ -2,6 +2,7 @@ extends Node
 
 @export var Platform: PackedScene
 
+
 func _ready():
 	$Start_spawn.start()
 	
