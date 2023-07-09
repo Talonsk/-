@@ -1,0 +1,10 @@
+res://Scenes/Main.tscn
+res://Code/Main.gd
+res://Scenes/Platform.tscn
+res://Scenes/Charecter.tscn
+res://Code/Charecter.gd
+res://Scenes/Object/Money.gd
+res://Code/Platform.gd
+res://Scenes/Object/money.tscn
+res://AnimatedMoney.gd
+res://Inventory.gd
