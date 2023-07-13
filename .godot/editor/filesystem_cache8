@@ -1,20 +1,46 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1688894938
+::res://::1689244065
 export_presets.cfg::TextFile::-1::1688887625::0::1::::<><>::
 icon.svg::CompressedTexture2D::4931278715788828007::1688836773::1688836778::1::::<><>::
-::res://Code/::1688893125
+::res://Code/::1689244044
 Animation.gd::GDScript::-1::1688884054::0::1::::<>AnimatedSprite2D<>::
-Charecter.gd::GDScript::-1::1688892998::0::1::::<>CharacterBody2D<>::
-Main.gd::GDScript::-1::1688889807::0::1::::<>Node<>::
-Platform.gd::GDScript::-1::1688893125::0::1::::<>CharacterBody2D<>::
+BagAnimated.gd::GDScript::-1::1688914741::0::1::::<>AnimatedSprite2D<>::
+Charecter.gd::GDScript::-1::1689244018::0::1::::<>CharacterBody2D<>::
+Coin_Counter.gd::GDScript::-1::1689237469::0::1::::<>Label<>::
+Heavy_Bag.gd::GDScript::-1::1689242477::0::1::::<>StaticBody2D<>::
+Main.gd::GDScript::-1::1689244044::0::1::::<>Node<>::
+Platform.gd::GDScript::-1::1689243795::0::1::::<>CharacterBody2D<>::
 Wall.gd::GDScript::-1::1688808688::0::1::::<>CharacterBody2D<>::
-::res://Image/::1688883745
+::res://Image/::1688911595
 BackGround.png::CompressedTexture2D::7794199820502660123::1688845158::1688845161::1::::<><>::
-Bag of Gold.png::CompressedTexture2D::8606502188604606173::1688853132::1688883745::1::::<><>::
-MonedaD.png::CompressedTexture2D::8934637111042478607::1688851158::1688851179::1::::<><>::
-Platform.png::CompressedTexture2D::5534758153062453781::1688844149::1688844155::1::::<><>::
-::res://Image/Character/::1688841643
-::res://Image/Character/Staing/::1688843726
+GTJAM22_Background.png::CompressedTexture2D::357279868575557904::1688911560::1688911595::1::::<><>::
+::res://Image/Character/::1688904387
+::res://Image/Character/Jamping/::1688904371
+Goldman_Jump_1.png::CompressedTexture2D::8993759423888697134::1688904155::1688904371::1::::<><>::
+Goldman_Jump_2.png::CompressedTexture2D::3801484819122407586::1688904165::1688904371::1::::<><>::
+Goldman_Jump_3.png::CompressedTexture2D::8558080783487995752::1688904173::1688904371::1::::<><>::
+Goldman_Jump_4.png::CompressedTexture2D::8675963901627429253::1688904188::1688904371::1::::<><>::
+Goldman_Jump_5.png::CompressedTexture2D::183563206530499253::1688904200::1688904371::1::::<><>::
+Goldman_Jump_6.png::CompressedTexture2D::7558537239316514528::1688904209::1688904371::1::::<><>::
+Goldman_Jump_7.png::CompressedTexture2D::6826108659876063948::1688904220::1688904371::1::::<><>::
+::res://Image/Character/Jumpcharge/::1688904371
+Goldman_jumpcharge_1.png::CompressedTexture2D::3871033149484285970::1688904073::1688904371::1::::<><>::
+Goldman_jumpcharge_2.png::CompressedTexture2D::1084236356498392918::1688904090::1688904371::1::::<><>::
+Goldman_jumpcharge_3.png::CompressedTexture2D::23630690052650204::1688904101::1688904371::1::::<><>::
+Goldman_jumpcharge_4.png::CompressedTexture2D::2676986956721987014::1688904113::1688904371::1::::<><>::
+::res://Image/Character/Shooting/::1688905174
+spr_goldman_shoot_1.png::CompressedTexture2D::2738084969438956112::1688904391::1688905174::1::::<><>::
+spr_goldman_shoot_2.png::CompressedTexture2D::4159755512968357685::1688904434::1688905174::1::::<><>::
+spr_goldman_shoot_3.png::CompressedTexture2D::2879133816773985549::1688904471::1688905174::1::::<><>::
+spr_goldman_shoot_4.png::CompressedTexture2D::8485717067937190467::1688904506::1688905174::1::::<><>::
+spr_goldman_shoot_5.png::CompressedTexture2D::4690602436305808765::1688904519::1688905174::1::::<><>::
+spr_goldman_shoot_6.png::CompressedTexture2D::5078673272421763077::1688904526::1688905174::1::::<><>::
+spr_goldman_shoot_7.png::CompressedTexture2D::8697686042681406689::1688904532::1688905174::1::::<><>::
+spr_goldman_shoot_8.png::CompressedTexture2D::220548706742438013::1688904537::1688905174::1::::<><>::
+spr_goldman_shoot_9.png::CompressedTexture2D::2130549252165440731::1688904543::1688905174::1::::<><>::
+spr_goldman_shoot_10.png::CompressedTexture2D::6884112758718766437::1688904548::1688905174::1::::<><>::
+spr_goldman_shoot_11.png::CompressedTexture2D::720889612381340199::1688904556::1688905174::1::::<><>::
+::res://Image/Character/Staing/::1688904428
 Chuvachok.png::CompressedTexture2D::7613449374639321328::1688843724::1688843726::1::::<><>::
 ::res://Image/Character/Walking/::1688840114
 ::res://Image/Character/Walking/Left/::1688840522
@@ -31,21 +57,90 @@ Chuvachok.png::CompressedTexture2D::7613449374639321328::1688843724::1688843726:
 3.png::CompressedTexture2D::6728931851597248887::1688837177::1688840155::1::::<><>::
 4.png::CompressedTexture2D::1474260331833918936::1688837234::1688840155::1::::<><>::
 5.png::CompressedTexture2D::157574857532654214::1688837119::1688840155::1::::<><>::
-::res://Music/::1688844736
+::res://Image/Item/::1689163712
+Bag of Gold.png::CompressedTexture2D::8606502188604606173::1688853132::1688902787::1::::<><>::
+GTJAM22_mocap1_3.png::CompressedTexture2D::6180822752456009556::1689163704::1689163712::1::::<><>::
+MonedaD.png::CompressedTexture2D::8934637111042478607::1688851158::1688902787::1::::<><>::
+Platform.png::CompressedTexture2D::5534758153062453781::1688844149::1688902787::1::::<><>::
+::res://Image/Item/Bench/::1688905174
+spr_dropplace_trashcan_empty.png::CompressedTexture2D::809128064446496665::1688905158::1688905174::1::::<><>::
+spr_dropplace_trashcan_full_1.png::CompressedTexture2D::6170998737730219598::1688905165::1688905174::1::::<><>::
+spr_dropplace_trashcan_full_2.png::CompressedTexture2D::2346189117408988732::1688905171::1688905174::1::::<><>::
+spr_dropplace_trashcan_full_3.png::CompressedTexture2D::381197394705490017::1688905138::1688905174::1::::<><>::
+::res://Image/Item/Fountain/::1688905174
+spr_dropplace_trashcan_empty_1.png::CompressedTexture2D::8681761392443754677::1688904976::1688905174::1::::<><>::
+spr_dropplace_trashcan_empty_2.png::CompressedTexture2D::7315508942910469423::1688904989::1688905174::1::::<><>::
+spr_dropplace_trashcan_empty_3.png::CompressedTexture2D::4913834291962437798::1688904953::1688905174::1::::<><>::
+::res://Image/Item/Gold_Fountain/::1688905174
+spr_dropplace_trashcan_full_1.png::CompressedTexture2D::4366364518369116617::1688905038::1688905174::1::::<><>::
+spr_dropplace_trashcan_full_2.png::CompressedTexture2D::1496316828524557225::1688905051::1688905174::1::::<><>::
+spr_dropplace_trashcan_full_3.png::CompressedTexture2D::20037280034094572::1688905027::1688905174::1::::<><>::
+::res://Image/Item/Heavy_Bag/::1688905174
+spr_heavybag_1.png::CompressedTexture2D::899279470580362562::1688904643::1688905174::1::::<><>::
+spr_heavybag_2.png::CompressedTexture2D::3640219407692644386::1688904659::1688905174::1::::<><>::
+spr_heavybag_3.png::CompressedTexture2D::6651329500778352265::1688904663::1688905174::1::::<><>::
+spr_heavybag_4.png::CompressedTexture2D::4359553685202741320::1688904672::1688905174::1::::<><>::
+spr_heavybag_5.png::CompressedTexture2D::2571205243072700519::1688904679::1688905174::1::::<><>::
+spr_heavybag_6.png::CompressedTexture2D::2488902751082826630::1688904687::1688905174::1::::<><>::
+spr_heavybag_7.png::CompressedTexture2D::4575327495813839089::1688904697::1688905174::1::::<><>::
+spr_heavybag_8.png::CompressedTexture2D::9112543651772504706::1688904704::1688905174::1::::<><>::
+spr_heavybag_9.png::CompressedTexture2D::1330524487710222190::1688904708::1688905174::1::::<><>::
+spr_heavybag_10.png::CompressedTexture2D::6086531547996203182::1688904717::1688905174::1::::<><>::
+spr_heavybag_11.png::CompressedTexture2D::1168986363397485930::1688904730::1688905174::1::::<><>::
+spr_heavybag_12.png::CompressedTexture2D::6708074301829119299::1688904739::1688905174::1::::<><>::
+spr_heavybag_13.png::CompressedTexture2D::630618651033458782::1688904751::1688905174::1::::<><>::
+spr_heavybag_14.png::CompressedTexture2D::134839942835848470::1688904757::1688905174::1::::<><>::
+spr_heavybag_15.png::CompressedTexture2D::4109575221945958795::1688904762::1688905174::1::::<><>::
+spr_heavybag_16.png::CompressedTexture2D::8748983724623736252::1688904766::1688905174::1::::<><>::
+spr_heavybag_17.png::CompressedTexture2D::6209233034783613305::1688904770::1688905174::1::::<><>::
+::res://Image/Item/HP_Bar/::1688921303
+Bar_Frame.png::CompressedTexture2D::9166738367545816993::1688906428::1688906448::1::::<><>::
+Bar_Strip.png::CompressedTexture2D::6425553549340752065::1688906445::1688906448::1::::<><>::
+HealthBar DARK.png::CompressedTexture2D::6486623320683503686::1688906126::1688906155::1::::<><>::
+::res://Image/Item/HP_Bar/Health Bar Asset Pack 2 by Adwit Rahman/::1607917087
+::res://Image/Item/HP_Bar/Health Bar Asset Pack 2 by Adwit Rahman/Health Bar Asset Pack 2 by Adwit Rahman/::1688905477
+beer (1).png::CompressedTexture2D::1514712504933351405::1526018956::1688905477::1::::<><>::
+beer (2).png::CompressedTexture2D::4322171211515350931::1526018973::1688905477::1::::<><>::
+beer (3).png::CompressedTexture2D::5888672576288435495::1526018944::1688905477::1::::<><>::
+Darkupdate.png::CompressedTexture2D::5344081434392081000::1564897489::1688905477::1::::<><>::
+greenbar (1).png::CompressedTexture2D::238638043052274594::1526018994::1688905477::1::::<><>::
+greenbar (2).png::CompressedTexture2D::7459462268194580474::1526019008::1688905477::1::::<><>::
+greenbar (3).png::CompressedTexture2D::9156269815265432964::1526019040::1688905477::1::::<><>::
+HealthBar DARK.png::CompressedTexture2D::5940629775568052933::1564897519::1688905477::1::::<><>::
+redblue (1).png::CompressedTexture2D::3969830480939502775::1526019093::1688905477::1::::<><>::
+redblue (2).png::CompressedTexture2D::2467052995545581682::1526019062::1688905477::1::::<><>::
+redblue (3).png::CompressedTexture2D::8144628962478611165::1526019077::1688905477::1::::<><>::
+rpg (1).png::CompressedTexture2D::4980449415621399251::1526018892::1688905477::1::::<><>::
+rpg (2).png::CompressedTexture2D::9027176564555499997::1526018908::1688905477::1::::<><>::
+rpg (3).png::CompressedTexture2D::622796358741371864::1526018925::1688905477::1::::<><>::
+::res://Image/Item/Trashcan/::1688905174
+spr_dropplace_trashcan_empty.png::CompressedTexture2D::6401660348430994953::1688904872::1688905174::1::::<><>::
+spr_dropplace_trashcan_full_1.png::CompressedTexture2D::8633112446040704876::1688904890::1688905174::1::::<><>::
+spr_dropplace_trashcan_full_2.png::CompressedTexture2D::1181592604351320025::1688904898::1688905174::1::::<><>::
+spr_dropplace_trashcan_full_3.png::CompressedTexture2D::4228860301103432323::1688904878::1688905174::1::::<><>::
+::res://Music/::1688906393
 Collecting.mp3::AudioStreamMP3::6756955425350825850::1688844697::1688844699::1::::<><>::
+Collect_new.mp3::AudioStreamMP3::518689022961943369::1688903999::1688904371::1::::<><>::
 Drop.mp3::AudioStreamMP3::4763512940773925766::1688844714::1688844736::1::::<><>::
+Drop_the_bag.mp3::AudioStreamMP3::8464214243280721489::1688905522::1688905526::1::::<><>::
+Drop_the_bag_2.mp3::AudioStreamMP3::3287066775204027312::1688906239::1688906393::1::::<><>::
 Gameplay_Finished.mp3::AudioStreamMP3::7728532531533727024::1688844687::1688844699::1::::<><>::
 Menu_Finished.mp3::AudioStreamMP3::8253363946568007386::1688844679::1688844682::1::::<><>::
 Run.mp3::AudioStreamMP3::849731806101110942::1688844720::1688844736::1::::<><>::
+Shoot.mp3::AudioStreamMP3::1718824621402712947::1688904006::1688904371::1::::<><>::
 ::res://Save/::1688840756
 Save1.tres::MeshLibrary::1971916275512819430::1688840756::0::1::::<><>::
-::res://Scenes/::1688894354
-Charecter.tscn::PackedScene::7019831445767563095::1688893088::0::1::::<><>::res://Code/Charecter.gd<>uid://c1324vhlkwe7v::::res://Image/Character/Walking/Left/0.png<>uid://dfggtlfylmnlm::::res://Image/Character/Walking/Left/1.png<>uid://dwd3sy1gmsyjg::::res://Image/Character/Walking/Left/2.png<>uid://c4ob6if271hnw::::res://Image/Character/Walking/Left/3.png<>uid://c8gvc8bij3bm4::::res://Image/Character/Walking/Left/4.png<>uid://ogd15dffx4we::::res://Image/Character/Walking/Left/5.png<>uid://dqqvnr7kolmka::::res://Image/Character/Walking/Right/0.png<>res://Code/Animation.gd<>uid://cgcje7bvgphyr::::res://Image/Character/Walking/Right/1.png<>uid://b5iqlgpwvkcjf::::res://Image/Character/Walking/Right/2.png<>uid://c24sr3kojhljr::::res://Image/Character/Walking/Right/3.png<>uid://vae38h0lbwg3::::res://Image/Character/Walking/Right/4.png<>uid://cilh8r1ysnni::::res://Image/Character/Walking/Right/5.png<>uid://dgqantc35oiwu::::res://Image/Character/Staing/Chuvachok.png
-Main.tscn::PackedScene::5750822577316772810::1688894354::0::1::::<><>::res://Code/Main.gd<>uid://c2u58tiq1i368::::res://Tilemap/GTJAM22_mocap1_2.png<>uid://c7apulvv7cag2::::res://Scenes/Charecter.tscn<>uid://cf4o7j7wbq0px::::res://Scenes/Platform.tscn<>uid://c8db8d5e0ivks::::res://Tilemap/tiles2.png<>uid://djbtlkeuhr8xr::::res://Image/BackGround.png<>uid://did02ixytgk4o::::res://Music/Gameplay_Finished.mp3<>uid://dagalf0l3r3cx::::res://Scenes/Object/money.tscn
-Platform.tscn::PackedScene::5184560246893251273::1688893125::0::1::::<><>::res://Code/Platform.gd<>uid://ck4cwm2vypxr6::::res://Image/Platform.png<>uid://dagalf0l3r3cx::::res://Scenes/Object/money.tscn
-::res://Scenes/Object/::1688892999
-Money.gd::GDScript::-1::1688892051::0::1::::Money<>CharacterBody2D<>::
-money.tscn::PackedScene::7171668263111384499::1688892999::0::1::::<><>::res://Scenes/Object/Money.gd<>uid://d0kafybi0dwrn::::res://Image/MonedaD.png
+::res://Scenes/::1689244057
+Charecter.tscn::PackedScene::7019831445767563095::1689244057::0::1::::<><>::res://Code/Charecter.gd<>uid://c1324vhlkwe7v::::res://Image/Character/Walking/Left/0.png<>uid://c1iea0wuj3tlg::::res://Scenes/Heavy_Bag.tscn<>uid://dfggtlfylmnlm::::res://Image/Character/Walking/Left/1.png<>uid://dwd3sy1gmsyjg::::res://Image/Character/Walking/Left/2.png<>uid://c4ob6if271hnw::::res://Image/Character/Walking/Left/3.png<>uid://c8gvc8bij3bm4::::res://Image/Character/Walking/Left/4.png<>uid://ogd15dffx4we::::res://Image/Character/Walking/Left/5.png<>uid://dqqvnr7kolmka::::res://Image/Character/Walking/Right/0.png<>res://Code/Animation.gd<>uid://cgcje7bvgphyr::::res://Image/Character/Walking/Right/1.png<>uid://b5iqlgpwvkcjf::::res://Image/Character/Walking/Right/2.png<>uid://c24sr3kojhljr::::res://Image/Character/Walking/Right/3.png<>uid://vae38h0lbwg3::::res://Image/Character/Walking/Right/4.png<>uid://cilh8r1ysnni::::res://Image/Character/Walking/Right/5.png<>uid://dgqantc35oiwu::::res://Image/Character/Staing/Chuvachok.png<>uid://ctcrlqjd13suk::::res://Scenes/UI.tscn
+Heavy_Bag.tscn::PackedScene::6614510539969897272::1689244057::0::1::::<><>::res://Code/Heavy_Bag.gd<>uid://m2vabyyuk8bm::::res://Image/Item/Heavy_Bag/spr_heavybag_1.png<>uid://br4l48ml0eub7::::res://Image/Item/Heavy_Bag/spr_heavybag_2.png<>uid://c107oponalj8l::::res://Image/Item/Heavy_Bag/spr_heavybag_3.png<>uid://b3d2hhmsbgka7::::res://Image/Item/Heavy_Bag/spr_heavybag_4.png<>uid://bcvrm0fbimo8n::::res://Image/Item/Heavy_Bag/spr_heavybag_5.png<>uid://bbpv4ntjejepq::::res://Image/Item/Heavy_Bag/spr_heavybag_6.png<>uid://b6gk8fs25twjp::::res://Image/Item/Heavy_Bag/spr_heavybag_7.png<>uid://d23gi6swlffgk::::res://Image/Item/Heavy_Bag/spr_heavybag_8.png<>uid://s7rsq1it05hq::::res://Image/Item/Heavy_Bag/spr_heavybag_9.png<>uid://csymjx4c6yrji::::res://Image/Item/Heavy_Bag/spr_heavybag_10.png<>uid://qwjbgaqc3hve::::res://Image/Item/Heavy_Bag/spr_heavybag_11.png<>uid://c2tpaejaatt6b::::res://Image/Item/Heavy_Bag/spr_heavybag_12.png<>uid://i8qgx11kwo2a::::res://Image/Item/Heavy_Bag/spr_heavybag_13.png<>uid://b6k2abueag5c::::res://Image/Item/Heavy_Bag/spr_heavybag_14.png<>uid://bysydrvscnyqd::::res://Image/Item/Heavy_Bag/spr_heavybag_15.png<>uid://dwwcqpfoo8p53::::res://Image/Item/Heavy_Bag/spr_heavybag_16.png<>uid://cup2fqad6h7wf::::res://Image/Item/Heavy_Bag/spr_heavybag_17.png
+HP_Bar.tscn::PackedScene::8424595649687339767::1688906808::0::1::::<><>::uid://d3uo3u6w2s6oj
+Lenta.tscn::PackedScene::5084529048576553878::1689244057::0::1::::<><>::uid://cucbiol0bbtxc::::res://Image/Item/GTJAM22_mocap1_3.png
+Main.tscn::PackedScene::5750822577316772810::1689244056::0::1::::<><>::res://Code/Main.gd<>uid://c2u58tiq1i368::::res://Tilemap/GTJAM22_mocap1_2.png<>uid://cf4o7j7wbq0px::::res://Scenes/Platform.tscn<>uid://c8db8d5e0ivks::::res://Tilemap/tiles2.png<>uid://fdcl2n1h4c6s::::res://Image/GTJAM22_Background.png<>uid://did02ixytgk4o::::res://Music/Gameplay_Finished.mp3<>uid://ctcrlqjd13suk::::res://Scenes/UI.tscn<>uid://ceo8pk4ilm40a::::res://Scenes/Lenta.tscn
+Platform.tscn::PackedScene::5184560246893251273::1689244057::0::1::::<><>::res://Code/Platform.gd<>uid://cnvvjwrw81vo3::::res://Scenes/Object/Money.tscn<>uid://ck4cwm2vypxr6::::res://Image/Item/Platform.png
+UI.tscn::PackedScene::6111610839075935770::1689244057::0::1::::<><>::res://Code/Coin_Counter.gd
+::res://Scenes/Object/::1689244057
+Money.gd::GDScript::-1::1689164529::0::1::::Money<>CharacterBody2D<>::
+Money.tscn::PackedScene::5729940579329221548::1689244057::0::1::::<><>::res://Scenes/Object/Money.gd<>uid://d0kafybi0dwrn::::res://Image/Item/MonedaD.png
 ::res://Tilemap/::1688845037
 GTJAM22_mocap1_2.png::CompressedTexture2D::6711109152740274959::1688837927::1688837931::1::::<><>::
 tiles2.png::CompressedTexture2D::7095386193024750218::1677188585::1688845037::1::::<><>::

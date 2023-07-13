@@ -1,0 +1,104 @@
+[gd_scene load_steps=21 format=3 uid="uid://c1iea0wuj3tlg"]
+
+[ext_resource type="Script" path="res://Code/Heavy_Bag.gd" id="1_fssad"]
+[ext_resource type="Texture2D" uid="uid://m2vabyyuk8bm" path="res://Image/Item/Heavy_Bag/spr_heavybag_1.png" id="1_g7o48"]
+[ext_resource type="Texture2D" uid="uid://br4l48ml0eub7" path="res://Image/Item/Heavy_Bag/spr_heavybag_2.png" id="2_1ayvn"]
+[ext_resource type="Texture2D" uid="uid://c107oponalj8l" path="res://Image/Item/Heavy_Bag/spr_heavybag_3.png" id="3_xvb4d"]
+[ext_resource type="Texture2D" uid="uid://b3d2hhmsbgka7" path="res://Image/Item/Heavy_Bag/spr_heavybag_4.png" id="4_i064l"]
+[ext_resource type="Texture2D" uid="uid://bcvrm0fbimo8n" path="res://Image/Item/Heavy_Bag/spr_heavybag_5.png" id="5_gxljv"]
+[ext_resource type="Texture2D" uid="uid://bbpv4ntjejepq" path="res://Image/Item/Heavy_Bag/spr_heavybag_6.png" id="6_wfesb"]
+[ext_resource type="Texture2D" uid="uid://b6gk8fs25twjp" path="res://Image/Item/Heavy_Bag/spr_heavybag_7.png" id="7_fcxbn"]
+[ext_resource type="Texture2D" uid="uid://d23gi6swlffgk" path="res://Image/Item/Heavy_Bag/spr_heavybag_8.png" id="8_jm2cw"]
+[ext_resource type="Texture2D" uid="uid://s7rsq1it05hq" path="res://Image/Item/Heavy_Bag/spr_heavybag_9.png" id="9_75usv"]
+[ext_resource type="Texture2D" uid="uid://csymjx4c6yrji" path="res://Image/Item/Heavy_Bag/spr_heavybag_10.png" id="10_rosmn"]
+[ext_resource type="Texture2D" uid="uid://qwjbgaqc3hve" path="res://Image/Item/Heavy_Bag/spr_heavybag_11.png" id="11_ckata"]
+[ext_resource type="Texture2D" uid="uid://c2tpaejaatt6b" path="res://Image/Item/Heavy_Bag/spr_heavybag_12.png" id="12_ohkeo"]
+[ext_resource type="Texture2D" uid="uid://i8qgx11kwo2a" path="res://Image/Item/Heavy_Bag/spr_heavybag_13.png" id="13_yvc6l"]
+[ext_resource type="Texture2D" uid="uid://b6k2abueag5c" path="res://Image/Item/Heavy_Bag/spr_heavybag_14.png" id="14_k8nke"]
+[ext_resource type="Texture2D" uid="uid://bysydrvscnyqd" path="res://Image/Item/Heavy_Bag/spr_heavybag_15.png" id="15_2dlx2"]
+[ext_resource type="Texture2D" uid="uid://dwwcqpfoo8p53" path="res://Image/Item/Heavy_Bag/spr_heavybag_16.png" id="16_oh7w6"]
+[ext_resource type="Texture2D" uid="uid://cup2fqad6h7wf" path="res://Image/Item/Heavy_Bag/spr_heavybag_17.png" id="17_maq2w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_70xwm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_g7o48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1ayvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xvb4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i064l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gxljv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wfesb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_fcxbn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jm2cw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_75usv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_rosmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ckata")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ohkeo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_yvc6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_k8nke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2dlx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_oh7w6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_maq2w")
+}],
+"loop": false,
+"name": &"fall",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_udsmq"]
+radius = 67.0
+height = 254.0
+
+[node name="Heavy_Bag" type="StaticBody2D"]
+process_mode = 2
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_fssad")
+
+[node name="AnimatedBag" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(4, -21)
+scale = Vector2(2.20313, 2.20313)
+sprite_frames = SubResource("SpriteFrames_70xwm")
+animation = &"fall"
+frame_progress = 0.711321
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 0
+visibility_layer = 0
+position = Vector2(140, 130)
+shape = SubResource("CapsuleShape2D_udsmq")

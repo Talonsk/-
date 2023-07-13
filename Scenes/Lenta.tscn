@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://ceo8pk4ilm40a"]
+
+[ext_resource type="Texture2D" uid="uid://cucbiol0bbtxc" path="res://Image/Item/GTJAM22_mocap1_3.png" id="1_7glcn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_780jw"]
+size = Vector2(153, 636.075)
+
+[node name="Lenta" type="StaticBody2D"]
+z_index = 5
+position = Vector2(-96, -326)
+scale = Vector2(1.2549, 1.00617)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 5.96318)
+scale = Vector2(1, 0.972592)
+texture = ExtResource("1_7glcn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 5
+position = Vector2(0, 5.96326)
+shape = SubResource("RectangleShape2D_780jw")

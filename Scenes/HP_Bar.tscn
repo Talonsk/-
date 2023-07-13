@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsa64ht33cyw2"]
+
+[ext_resource type="Texture2D" uid="uid://d3uo3u6w2s6oj" path="res://Image/Item/HP_Bar/Bar_Frame.png" id="1_1eikv"]
+[ext_resource type="Texture2D" uid="uid://cxst6s75l8jxx" path="res://Image/Item/HP_Bar/Bar_Strip.png" id="2_7fadr"]
+
+[node name="TextureProgressBar" type="TextureProgressBar"]
+texture_filter = 1
+value = 50.0
+texture_over = ExtResource("1_1eikv")
+texture_progress = ExtResource("2_7fadr")

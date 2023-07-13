@@ -14,8 +14,4 @@ func _physics_process(delta):
 	
 	if not is_on_floor():
 		velocity.y = SPEED
-		
-	if velocity.y >= 20000:
-		queue_free()
-		
 	move_and_slide()

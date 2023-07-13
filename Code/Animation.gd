@@ -13,3 +13,5 @@ func _physics_process(delta):
 	else:
 		play("stay")
 	
+	if get_tree().paused:
+		play("stay")
