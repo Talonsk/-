@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://cnvvjwrw81vo3"]
+[gd_scene load_steps=11 format=3 uid="uid://cnvvjwrw81vo3"]
 
 [ext_resource type="Script" path="res://Scenes/Object/Money.gd" id="1_2kicw"]
 [ext_resource type="Texture2D" uid="uid://d0kafybi0dwrn" path="res://Image/Item/MonedaD.png" id="2_i01mi"]
+[ext_resource type="AudioStream" uid="uid://yqu14xsb75sh" path="res://Music/Shoot.mp3" id="3_slwdg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dlq2x"]
 atlas = ExtResource("2_i01mi")
@@ -66,3 +67,6 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(19, 19)
 shape = SubResource("CircleShape2D_7gdh0")
+
+[node name="ASP_Collect" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_slwdg")

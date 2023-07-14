@@ -84,6 +84,7 @@ height = 254.0
 
 [node name="Heavy_Bag" type="StaticBody2D"]
 process_mode = 2
+z_index = 5
 collision_layer = 0
 collision_mask = 0
 script = ExtResource("1_fssad")

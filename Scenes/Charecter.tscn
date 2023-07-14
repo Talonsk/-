@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c7apulvv7cag2"]
+[gd_scene load_steps=20 format=3 uid="uid://c7apulvv7cag2"]
 
 [ext_resource type="Script" path="res://Code/Charecter.gd" id="1_b3h5q"]
 [ext_resource type="Texture2D" uid="uid://c1324vhlkwe7v" path="res://Image/Character/Walking/Left/0.png" id="2_77cab"]
@@ -16,7 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://vae38h0lbwg3" path="res://Image/Character/Walking/Right/4.png" id="12_02he2"]
 [ext_resource type="Texture2D" uid="uid://cilh8r1ysnni" path="res://Image/Character/Walking/Right/5.png" id="13_1pift"]
 [ext_resource type="Texture2D" uid="uid://dgqantc35oiwu" path="res://Image/Character/Staing/Chuvachok.png" id="14_jxufx"]
-[ext_resource type="PackedScene" uid="uid://ctcrlqjd13suk" path="res://Scenes/UI.tscn" id="17_58rti"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lwxy4"]
 resource_local_to_scene = true
@@ -109,7 +108,5 @@ light_mask = 0
 visibility_layer = 8
 position = Vector2(101, 112)
 shape = SubResource("CircleShape2D_tqyt0")
-
-[node name="CanvasLayer" parent="." instance=ExtResource("17_58rti")]
 
 [connection signal="body_entered" from="Area2D" to="." method="pick_up_money"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://cn60hcbgoy2jm"]
+[gd_scene load_steps=16 format=3 uid="uid://cn60hcbgoy2jm"]
 
 [ext_resource type="Script" path="res://Code/Main.gd" id="1_11hvt"]
 [ext_resource type="Texture2D" uid="uid://c2u58tiq1i368" path="res://Tilemap/GTJAM22_mocap1_2.png" id="1_lm064"]
@@ -8,6 +8,7 @@
 [ext_resource type="AudioStream" uid="uid://did02ixytgk4o" path="res://Music/Gameplay_Finished.mp3" id="6_1rvey"]
 [ext_resource type="PackedScene" uid="uid://c7apulvv7cag2" path="res://Scenes/Charecter.tscn" id="6_dpstv"]
 [ext_resource type="PackedScene" uid="uid://ctcrlqjd13suk" path="res://Scenes/UI.tscn" id="9_lxwcq"]
+[ext_resource type="PackedScene" uid="uid://6uplan5v1abq" path="res://Scenes/Trashcan.tscn" id="10_dysi3"]
 [ext_resource type="PackedScene" uid="uid://ceo8pk4ilm40a" path="res://Scenes/Lenta.tscn" id="11_yhg63"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m4p0c"]
@@ -120,7 +121,7 @@ position = Vector2(472, -1480)
 [node name="Camera2D" type="Camera2D" parent="Charecter"]
 limit_left = -200
 limit_top = -1450
-limit_right = 1350
+limit_right = 1550
 limit_bottom = 0
 
 [node name="Lentes" type="Node2D" parent="."]
@@ -145,7 +146,6 @@ position = Vector2(16, -1280)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_1rvey")
 volume_db = -7.0
-autoplay = true
 
 [node name="Start_spawn" type="Timer" parent="."]
 wait_time = 4.0
@@ -165,5 +165,9 @@ position = Vector2(576, -1280)
 
 [node name="Platform4" parent="Patform" instance=ExtResource("2_sj452")]
 position = Vector2(640, -1280)
+
+[node name="Trashcan" parent="." instance=ExtResource("10_dysi3")]
+visible = false
+position = Vector2(1396, -1450)
 
 [connection signal="timeout" from="Start_spawn" to="." method="_on_timer_timeout"]

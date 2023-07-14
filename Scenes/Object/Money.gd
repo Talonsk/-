@@ -15,3 +15,4 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y = SPEED
 	move_and_slide()
+

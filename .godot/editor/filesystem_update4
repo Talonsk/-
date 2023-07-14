@@ -1,11 +1,11 @@
 res://Scenes/Main.tscn
 res://Code/Platform.gd
+res://Code/Main.gd
 res://Scenes/Charecter.tscn
 res://Scenes/Platform.tscn
 res://Scenes/Object/Money.tscn
+res://Scenes/Trashcan.tscn
 res://Scenes/Heavy_Bag.tscn
 res://Scenes/UI.tscn
 res://Scenes/Lenta.tscn
 res://Code/Charecter.gd
-res://Code/Animation.gd
-res://Code/Coin_Counter.gd

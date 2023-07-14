@@ -2,9 +2,11 @@ extends Node
 
 @export var Platform: PackedScene
 
+var is_have_trashcan = false
+
 func _ready():
 	$Start_spawn.start()
-	
+
 func _on_timer_timeout():
 	var platform_spawn_location = get_node("PlatformPath/PlatformPathFollow")
 	platform_spawn_location.progress_ratio = randf()
@@ -19,3 +21,5 @@ func _on_timer_timeout():
 		
 		if platform.position >= Vector2(1088, 0):
 			platform.queue_free()
+			
+	is_have_trashcan = false

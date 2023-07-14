@@ -1,0 +1,64 @@
+[gd_scene load_steps=10 format=3 uid="uid://6uplan5v1abq"]
+
+[ext_resource type="Script" path="res://Code/Trashcan.gd" id="1_mcao0"]
+[ext_resource type="Texture2D" uid="uid://cxhan7x74maxl" path="res://Image/Item/Trashcan/spr_dropplace_trashcan_empty.png" id="1_tn3or"]
+[ext_resource type="Texture2D" uid="uid://du87dom3wkaq3" path="res://Image/Item/Trashcan/spr_dropplace_trashcan_full_1.png" id="2_42roi"]
+[ext_resource type="Texture2D" uid="uid://q3mwme1g7f2p" path="res://Image/Item/Trashcan/spr_dropplace_trashcan_full_2.png" id="3_phevk"]
+[ext_resource type="Texture2D" uid="uid://b1iqygjr1n2mx" path="res://Image/Item/Trashcan/spr_dropplace_trashcan_full_3.png" id="4_gcffc"]
+[ext_resource type="AudioStream" uid="uid://b84qmkw8vg4k5" path="res://Music/Drop.mp3" id="5_0w8aq"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_11w8f"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tn3or")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_42roi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_phevk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gcffc")
+}],
+"loop": false,
+"name": &"filling of gold",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_382v7"]
+size = Vector2(68, 86)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4y3da"]
+radius = 63.0317
+
+[node name="Trashcan" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 256
+script = ExtResource("1_mcao0")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -145)
+scale = Vector2(2.26563, 2.26563)
+sprite_frames = SubResource("SpriteFrames_11w8f")
+animation = &"filling of gold"
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(68, -50)
+shape = SubResource("RectangleShape2D_382v7")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(68, -50)
+shape = SubResource("CircleShape2D_4y3da")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_0w8aq")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
