@@ -9,9 +9,9 @@ var coins = 0
 var is_stop_game = false
 var chance_of_money = 70
 var chance_of_trashchan = 5
+var random_numger = randf_range(0, 101)
 
 func _ready():
-	
 	var money_random_numger = randf_range(0, 101)
 	if money_random_numger <= chance_of_money:
 		var money = Money.instantiate()
@@ -29,7 +29,7 @@ func _ready():
 		trashchan.position = change_position
 		add_child(trashchan)
 		Main.is_have_trashcan = true
-
+		
 func _physics_process(delta):
 	
 	if not is_on_floor():

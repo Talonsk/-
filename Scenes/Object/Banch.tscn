@@ -1,0 +1,56 @@
+[gd_scene load_steps=9 format=3 uid="uid://c507belot4ibi"]
+
+[ext_resource type="PackedScene" uid="uid://hd477kir6gjg" path="res://Scenes/Object/Spawn_Objecttscn.tscn" id="1_vtpce"]
+[ext_resource type="Texture2D" uid="uid://lr7hrqoy7mmr" path="res://Image/Item/Bench/spr_dropplace_trashcan_empty.png" id="2_jpro6"]
+[ext_resource type="Texture2D" uid="uid://ct6jphpdwv0jq" path="res://Image/Item/Bench/spr_dropplace_trashcan_full_1.png" id="3_yb42y"]
+[ext_resource type="Texture2D" uid="uid://8ornleoukecy" path="res://Image/Item/Bench/spr_dropplace_trashcan_full_2.png" id="4_omkn7"]
+[ext_resource type="Texture2D" uid="uid://fowja2f1vp82" path="res://Image/Item/Bench/spr_dropplace_trashcan_full_3.png" id="5_hs00p"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lscew"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jpro6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_yb42y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_omkn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_hs00p")
+}],
+"loop": false,
+"name": &"filling of gold",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_eprbw"]
+size = Vector2(119, 62)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3buk6"]
+radius = 42.0
+height = 144.0
+
+[node name="Banch" instance=ExtResource("1_vtpce")]
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+scale = Vector2(2.1875, 2.1875)
+sprite_frames = SubResource("SpriteFrames_lscew")
+animation = &"filling of gold"
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(69.5, 109)
+shape = SubResource("RectangleShape2D_eprbw")
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(69, 109)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_3buk6")
+
+[node name="Label" parent="." index="4"]
+offset_left = -21.0
+offset_top = 53.0
+offset_right = 162.0
+offset_bottom = 79.0

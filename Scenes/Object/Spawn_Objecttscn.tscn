@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://hd477kir6gjg"]
+
+[ext_resource type="Script" path="res://Scenes/Object/Spawn_objeckt.gd" id="1_e7otg"]
+[ext_resource type="AudioStream" uid="uid://b84qmkw8vg4k5" path="res://Music/Drop.mp3" id="2_f2uwx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rwu35"]
+font_size = 14
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_e7otg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_f2uwx")
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Press E to reset the money"
+label_settings = SubResource("LabelSettings_rwu35")
+
+[connection signal="body_entered" from="Area2D" to="." method="_charecter_entered"]

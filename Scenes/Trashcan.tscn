@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://6uplan5v1abq"]
+[gd_scene load_steps=11 format=3 uid="uid://6uplan5v1abq"]
 
 [ext_resource type="Script" path="res://Code/Trashcan.gd" id="1_mcao0"]
 [ext_resource type="Texture2D" uid="uid://cxhan7x74maxl" path="res://Image/Item/Trashcan/spr_dropplace_trashcan_empty.png" id="1_tn3or"]
@@ -33,6 +33,9 @@ size = Vector2(68, 86)
 [sub_resource type="CircleShape2D" id="CircleShape2D_4y3da"]
 radius = 63.0317
 
+[sub_resource type="LabelSettings" id="LabelSettings_rhpio"]
+font_size = 14
+
 [node name="Trashcan" type="CharacterBody2D"]
 collision_layer = 0
 collision_mask = 256
@@ -52,7 +55,7 @@ shape = SubResource("RectangleShape2D_382v7")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 0
-collision_mask = 8
+collision_mask = 136
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(68, -50)
@@ -61,4 +64,14 @@ shape = SubResource("CircleShape2D_4y3da")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_0w8aq")
 
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = -22.0
+offset_top = -117.0
+offset_right = 160.0
+offset_bottom = -94.0
+text = "Press E to reset the money"
+label_settings = SubResource("LabelSettings_rhpio")
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_charecter_entered"]

@@ -3,6 +3,11 @@ extends Node
 @export var Platform: PackedScene
 
 var is_have_trashcan = false
+var is_have_banch = false
+var is_have_fantein = false
+
+var object_status = [is_have_trashcan, is_have_banch, is_have_fantein]
+
 
 func _ready():
 	$Start_spawn.start()
@@ -22,4 +27,5 @@ func _on_timer_timeout():
 		if platform.position >= Vector2(1088, 0):
 			platform.queue_free()
 			
-	is_have_trashcan = false
+	for x in range(len(object_status)):
+		object_status[x] = false

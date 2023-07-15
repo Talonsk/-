@@ -16,3 +16,5 @@ func _physics_process(delta):
 		velocity.y = SPEED
 	move_and_slide()
 
+func play_sound():
+	$ASP_Collect.play()

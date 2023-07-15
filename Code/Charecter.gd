@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Charecter
 
 @export var Bag: PackedScene
 @onready var Text = $/root/Node/CanvasLayer/MarginContainer/VBoxContainer/Massege
@@ -15,7 +16,7 @@ var is_stop_game = false
 func _physics_process(delta):
 
 	if not is_on_floor():
-		velocity.y +=  delta * coins * 170
+		velocity.y +=  delta * 200 + coins * 2
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 #	if position.y >= 0:
@@ -34,8 +35,9 @@ func change_coins(diff : int):
 	
 func pick_up_money(money : Money):
 	money.pick_up()
+	money.play_sound()
 	var Colect_Audio = money.get_node("ASP_Collect")
-	Colect_Audio.play(0.0)
+	Colect_Audio.play()
 	change_coins(1)
 	Text.text = "Coins: " + str(coins)
 	if coins == 10:
