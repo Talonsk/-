@@ -87,6 +87,7 @@ script = ExtResource("1_b3h5q")
 Bag = ExtResource("2_jh54j")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+process_mode = 3
 texture_filter = 1
 scale = Vector2(3.125, 3.125)
 sprite_frames = SubResource("SpriteFrames_lwxy4")

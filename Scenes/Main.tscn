@@ -116,7 +116,7 @@ script = SubResource("GDScript_q6nyf")
 
 [node name="Charecter" parent="." instance=ExtResource("6_dpstv")]
 z_index = 1
-position = Vector2(554, -1485)
+position = Vector2(464, -1480)
 
 [node name="Camera2D" type="Camera2D" parent="Charecter"]
 limit_left = -200
@@ -146,6 +146,7 @@ position = Vector2(16, -1280)
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_1rvey")
 volume_db = -7.0
+autoplay = true
 
 [node name="Start_spawn" type="Timer" parent="."]
 wait_time = 4.0

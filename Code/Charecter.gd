@@ -48,7 +48,6 @@ func check_money():
 	var change_position = Vector2(-40,-200)
 	bag.position = change_position
 	bag.play_fall()
-	print("Animation played")
+	bag.get_node("AudioStreamPlayer").play()
 	call_deferred("add_child", bag)
-	$AnimatedSprite2D.process_mode = Node.PROCESS_MODE_WHEN_PAUSED
 	get_tree().paused = true
